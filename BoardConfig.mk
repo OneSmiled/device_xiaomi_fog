@@ -75,6 +75,9 @@ TARGET_USES_NEW_ION_API := true
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
+# DRM
+TARGET_ENABLE_MEDIADRM_64 := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
