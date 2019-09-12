@@ -38,6 +38,9 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_boot
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := fog,wind,rain
 
