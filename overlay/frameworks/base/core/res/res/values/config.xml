@@ -382,6 +382,12 @@
         <item>40</item>
     </integer-array>
 
+    <!-- The list of components which should be automatically disabled for a specific package. -->
+    <string-array name="config_disabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
+        <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
+    </string-array>
+
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
