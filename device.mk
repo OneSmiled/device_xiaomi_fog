@@ -25,5 +25,8 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/fog/fog-vendor.mk)
