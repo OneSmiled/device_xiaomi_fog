@@ -376,10 +376,6 @@ PRODUCT_PACKAGES += \
     SecureElement \
     Tag
 
-# Partitions
-PRODUCT_USE_DYNAMIC_PARTITIONS := true
-PRODUCT_BUILD_SUPER_PARTITION := false
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/nfc/init.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.nfc.rc
 
@@ -390,6 +386,14 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
@@ -399,7 +403,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service-qti
-    
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
