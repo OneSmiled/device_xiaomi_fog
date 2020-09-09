@@ -131,6 +131,10 @@ on boot
     chmod 0777 /sys/class/leds/vibrator/duration
     chmod 0777 /sys/class/leds/vibrator/activate
 
+on property:sys.boot_completed=1
+#Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
