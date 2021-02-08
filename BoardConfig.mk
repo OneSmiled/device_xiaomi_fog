@@ -182,6 +182,9 @@ VENDOR_SECURITY_PATCH := 2022-06-01
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
+# Sepolicy
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
