@@ -328,5 +328,14 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
+
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/fog/fog-vendor.mk)
