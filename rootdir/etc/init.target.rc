@@ -93,9 +93,6 @@ on post-fs-data
 #Creat charger logger
     mkdir /data/vendor/charge_logger system
     
-on early-boot
-    start vendor.sensors
-
 # M355 add for saving files of TP selftest
     mkdir /data/vendor/touchpad
     chown system system /data/vendor/touchpad
@@ -130,6 +127,7 @@ on boot
 	
 #Start mi_thermald
     start mi_thermald	
+    start vendor.sensors
 
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
