@@ -479,6 +479,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Telephony
 PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
     ims-ext-common \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
