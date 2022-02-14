@@ -65,7 +65,8 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.primary.bengal \
     audio.primary.default \
-    audio.usb.default
+    audio.usb.default \
+    audio.usbv2.default
 
 PRODUCT_PACKAGES += \
     libaudio-resampler \
