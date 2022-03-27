@@ -109,6 +109,10 @@ DEVICE_MATRIX_FILE   += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += c3qn
 ODM_MANIFEST_C3QN_FILES := $(DEVICE_PATH)/configs/hidl/manifest_c3qn.xml
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_fog
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_fog
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
