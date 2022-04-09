@@ -438,9 +438,11 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
-    update_engine_client \
     update_engine_sideload \
     update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # Telephony
 PRODUCT_PACKAGES += \
