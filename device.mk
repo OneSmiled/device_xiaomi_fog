@@ -81,5 +81,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/fog/fog-vendor.mk)
