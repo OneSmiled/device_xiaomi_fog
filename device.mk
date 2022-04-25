@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/fog/fog-vendor.mk)
