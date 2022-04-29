@@ -502,9 +502,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
-PRODUCT_PACKAGES += \
-    vndk_package
-
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
 
 # WiFi
