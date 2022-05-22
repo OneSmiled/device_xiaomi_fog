@@ -157,7 +157,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.xiaomi.hardware.displayfeature@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
 PRODUCT_PACKAGES += \
@@ -178,8 +177,6 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0.vendor \
-    android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm@1.4-service.clearkey
 
@@ -188,11 +185,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
 
