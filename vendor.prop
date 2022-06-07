@@ -196,6 +196,7 @@ debug.stagefright.omx_default_rank=0
 
 # NFC DT
 ro.nfc.port=I2C
+ro.hardware.nfc_nci=pn8x
 
 # NTP
 persist.backup.ntpServer=0.pool.ntp.org
