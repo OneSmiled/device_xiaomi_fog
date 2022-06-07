@@ -49,9 +49,6 @@ on init
     start vendor.qseecomd
     start keymaster-4-0
 
-on early-fs
-    start vold
-
 on fs
     start hwservicemanager
     mount_all --early
@@ -65,10 +62,6 @@ on fs
     chown system system /sys/class/thermal/thermal_message/sconfig
     chmod 0666 /sys/class/thermal/thermal_message/temp_state
     chown system system /sys/class/thermal/thermal_message/temp_state
-
-on post-fs
-    # set RLIMIT_MEMLOCK to 64MB
-    setrlimit 8 67108864 67108864
 
 on late-fs
     wait_for_prop hwservicemanager.ready true
