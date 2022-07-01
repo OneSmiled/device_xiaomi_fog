@@ -472,7 +472,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.xiaomi_fog
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_PACKAGES += \
