@@ -110,6 +110,8 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE   += $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+ODM_MANIFEST_SKUS += c3qn
+ODM_MANIFEST_C3QN_FILES := $(DEVICE_PATH)/configs/hidl/manifest_c3qn.xml
 
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
