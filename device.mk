@@ -72,6 +72,18 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
+# Boot control HAL
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    android.hardware.boot@1.1-service
+
+PRODUCT_HOST_PACKAGES += \
+    brillo_update_payload
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -135,6 +147,13 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Update Engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_client \
+    update_engine_sideload \
+    update_verifier
 
 # Inherit from vendor if exists
 $(call inherit-product-if-exists, vendor/xiaomi/fog/fog-vendor.mk)
