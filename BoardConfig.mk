@@ -114,6 +114,11 @@ BOARD_KERNEL_CMDLINE += swiotlb=2048
 # Kernel - Set SELinux to permissive temporarily
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
+# Kernel - Prebuilt images
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/Image
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -123,7 +128,10 @@ BOARD_BOOTIMG_HEADER_VERSION := 3
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
+
+TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
+TARGET_KERNEL_HEADERS := kernel/xiaomi/bengal
+TARGET_KERNEL_SOURCE := kernel/xiaomi/bengal
 
 # Kernel additional flags
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
