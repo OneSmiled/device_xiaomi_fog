@@ -236,6 +236,31 @@ PRODUCT_PACKAGES += \
     liboffloadhal
 
 # Media
+PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-impl \
+    android.hardware.media.omx@1.0-service
+
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libavservices_minijail_vendor
+
+PRODUCT_PACKAGES += \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libOmxVdec \
+    libOmxVenc
+
+PRODUCT_PACKAGES += \
+    libstagefrighthw \
+    libstagefrighthw_omx \
+    libstagefrighthw_foundation \
+    libstagefright_omx.vendor
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
