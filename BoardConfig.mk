@@ -202,6 +202,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-01
 
+# SELinux
+IGNORE_SELINUX_NEVERALLOWS := true
+
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
