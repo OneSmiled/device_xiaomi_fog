@@ -25,6 +25,9 @@ pm.dexopt.first-boot=quicken
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Graphics
+persist.demo.hdmirotationlock=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
@@ -51,8 +54,19 @@ persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# NTP
+persist.backup.ntpServer=0.pool.ntp.org
+
 # Radio
 persist.sys.fflag.override.settings_provider_model=false
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+
+# Time-services
+persist.timed.enable=true
+
+# WFD settings
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
 
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
