@@ -413,13 +413,11 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qti.ufs.rc \
     init.target.rc \
-    fstab.default \
-    fstab.emmc \
+    fstab.qcom \
     ueventd.qcom.rc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_RAMDISK)/fstab.default \
-    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
 # Seccomp
 PRODUCT_COPY_FILES += \
