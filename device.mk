@@ -39,10 +39,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
-    android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio@4.0-impl \
-    android.hardware.audio@4.0-service \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.soundtrigger@2.3-impl
@@ -63,10 +59,8 @@ PRODUCT_PACKAGES += \
     libtinycompress
 
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.hardware.audiohalext@1.0.vendor
-
-BOARD_SUPPORTS_OPENSOURCE_STHAL := true
-BOARD_SUPPORTS_SOUND_TRIGGER := true
 
 # Audio Configurations
 PRODUCT_COPY_FILES += \
