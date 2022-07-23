@@ -52,7 +52,7 @@ on init
 
 on fs
     start hwservicemanager
-    mount_all --early
+    mount_all /vendor/etc/fstab.qcom --early
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -65,7 +65,7 @@ on fs
     chown system system /sys/class/thermal/thermal_message/temp_state
 
 on late-fs
-    mount_all --late
+    mount_all /vendor/etc/fstab.qcom --late
 
     start surfaceflinger
     start bootanim
