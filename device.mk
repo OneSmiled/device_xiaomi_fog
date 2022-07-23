@@ -422,9 +422,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
-    init.qcom.factory.rc \
     init.qcom.rc \
-    init.qti.ufs.rc \
     init.target.rc \
     fstab.qcom \
     fstab.qcom_ramdisk \
