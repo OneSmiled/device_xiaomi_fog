@@ -423,6 +423,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.rc \
+    init.recovery.qcom.rc \
     init.target.rc \
     fstab.qcom \
     fstab.qcom_ramdisk \
