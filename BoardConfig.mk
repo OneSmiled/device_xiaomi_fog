@@ -231,9 +231,6 @@ VENDOR_SECURITY_PATCH := 2022-06-01
 # SELinux
 IGNORE_SELINUX_NEVERALLOWS := true
 
-# Sensors
-USE_SENSOR_MULTI_HAL := true
-
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
