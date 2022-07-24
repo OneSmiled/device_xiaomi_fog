@@ -150,7 +150,7 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Kernel - Prebuilt images
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/Image
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
