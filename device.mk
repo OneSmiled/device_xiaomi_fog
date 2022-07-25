@@ -453,7 +453,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Update Engine
 PRODUCT_PACKAGES += \
