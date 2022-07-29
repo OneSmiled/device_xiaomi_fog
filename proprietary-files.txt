@@ -32,7 +32,7 @@ vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
-# ADSP - from spes
+# ADSP
 vendor/bin/adsprpcd
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -81,7 +81,10 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT+ - from spes
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio FX - from spes
+# Audio Firmware
+vendor/firmware/aw87xxx_acf.bin
+
+# Audio FX
 system_ext/etc/permissions/audiosphere.xml
 system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
@@ -91,11 +94,11 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
 
-# Audio HAL - from spes
+# Audio HAL
 vendor/lib/hw/audio.primary.bengal.so
 vendor/lib/libaudio_log_utils.so
 
-# Audio Libraries - from spes
+# Audio Libraries
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
