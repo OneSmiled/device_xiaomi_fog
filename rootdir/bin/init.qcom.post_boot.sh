@@ -804,8 +804,6 @@ function sdm660_sched_schedutil_dcvs() {
 
 }
 
-target=`getprop ro.board.platform`
-
 KernelVersionStr=`cat /proc/sys/kernel/osrelease`
 KernelVersionS=${KernelVersionStr:2:2}
 KernelVersionA=${KernelVersionStr:0:1}
@@ -896,8 +894,6 @@ low_ram=`getprop ro.config.low_ram`
 
 if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ]; then
       configure_read_ahead_kb_values
-      echo 0 > /proc/sys/vm/page-cluster
-      echo 100 > /proc/sys/vm/swappiness
 else
     arch_type=`uname -m`
 
@@ -4257,8 +4253,6 @@ case "$target" in
 
             echo "0:1190000" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
             echo 120 > /sys/devices/system/cpu/cpu_boost/input_boost_ms
-	    echo "0:1516800 1:0 2:0 3:0 4:1766400 5:0 6:0 7:0" > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_freq
-	    echo 400 > /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms
 
 	    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 

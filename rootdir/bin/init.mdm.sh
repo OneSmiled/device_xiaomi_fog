@@ -1,4 +1,6 @@
-# Copyright (c) 2017-2018,2020 The Linux Foundation. All rights reserved.
+#! /vendor/bin/sh
+
+# Copyright (c) 2013, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -7,7 +9,7 @@
 #     * Redistributions in binary form must reproduce the above copyright
 #       notice, this list of conditions and the following disclaimer in the
 #       documentation and/or other materials provided with the distribution.
-#     * Neither the name of The Linux Foundation nor
+#     * Neither the name of Linux Foundation nor
 #       the names of its contributors may be used to endorse or promote
 #       products derived from this software without specific prior written
 #       permission.
@@ -25,31 +27,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on init
-    # Mount binderfs
-    mkdir /dev/binderfs
-    mount binder binder /dev/binderfs stats=global
-    chmod 0755 /dev/binderfs
+baseband=`getprop ro.baseband`
+if [ "$baseband" = "mdm" ] || [ "$baseband" = "mdm2" ]; then
+	start vendor.mdm_helper
+fi
 
-    symlink /dev/binderfs/binder /dev/binder
-    symlink /dev/binderfs/hwbinder /dev/hwbinder
-    symlink /dev/binderfs/vndbinder /dev/vndbinder
-
-    chmod 0666 /dev/binderfs/hwbinder
-    chmod 0666 /dev/binderfs/binder
-    chmod 0666 /dev/binderfs/vndbinder
-
-    write /sys/class/backlight/panel0-backlight/brightness 200
-
-    setprop sys.usb.configfs 1
-
-on property:ro.boot.usbconfigfs=false
-   setprop sys.usb.configfs 0
-
-on property:ro.boot.usbcontroller=*
-    setprop sys.usb.controller ${ro.boot.usbcontroller}
-    write /sys/class/udc/${ro.boot.usbcontroller}/device/../mode peripheral
-
-on fs
-    wait /dev/block/platform/soc/${ro.boot.bootdevice}
-    symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice

@@ -422,17 +422,18 @@ PRODUCT_PACKAGES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.class_main.sh \
+    init.mdm.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom_ramdisk \
     init.qcom.rc \
     init.recovery.qcom.rc \
     init.target.rc \
-    fstab.qcom \
-    fstab.qcom_ramdisk \
     ueventd.qcom.rc
 
 # Seccomp
