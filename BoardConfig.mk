@@ -141,8 +141,8 @@ BOARD_KERNEL_CMDLINE += \
 
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/bengal
-TARGET_KERNEL_SOURCE := kernel/xiaomi/bengal
+TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
+TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 
 # Kernel - Set SELinux to permissive temporarily
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
