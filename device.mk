@@ -166,6 +166,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
+    vendor.qti.hardware.display.allocator@4.0.vendor \
+    vendor.qti.hardware.display.composer@1.0.vendor \
+    vendor.qti.hardware.display.composer@2.0.vendor \
+    vendor.qti.hardware.display.composer@3.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
@@ -181,7 +187,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
+    libdisplayconfig.system.qti \
     libqdMetaData \
+    libqdMetaData.system \
     libsdmcore \
     libsdmutils \
     libtinyxml
