@@ -70,7 +70,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
     audio.r_submix.default \
     audio.primary.bengal \
     audio.primary.default \
@@ -102,8 +101,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
     android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio@2.1-impl \
+    libbluetooth_audio_session \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
