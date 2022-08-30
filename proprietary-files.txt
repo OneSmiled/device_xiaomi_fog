@@ -983,6 +983,7 @@ vendor/lib/modules/audio_adsp_loader.ko
 vendor/lib/modules/audio_apr.ko
 vendor/lib/modules/audio_aw87xxx.ko
 vendor/lib/modules/audio_bolero_cdc.ko
+vendor/lib/modules/audio_fs1599.ko
 vendor/lib/modules/audio_machine_bengal.ko
 vendor/lib/modules/audio_mbhc.ko
 vendor/lib/modules/audio_native.ko
@@ -997,8 +998,8 @@ vendor/lib/modules/audio_rouleur_slave.ko
 vendor/lib/modules/audio_rx_macro.ko
 vendor/lib/modules/audio_snd_event.ko
 vendor/lib/modules/audio_stub.ko
-vendor/lib/modules/audio_swr.ko
 vendor/lib/modules/audio_swr_ctrl.ko
+vendor/lib/modules/audio_swr.ko
 vendor/lib/modules/audio_tx_macro.ko
 vendor/lib/modules/audio_usf.ko
 vendor/lib/modules/audio_va_macro.ko
