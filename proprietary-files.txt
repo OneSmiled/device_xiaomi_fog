@@ -1,6 +1,5 @@
 # All unpinned blobs below are extracted from fog-user 12 SKQ1.211103.001 V13.0.2.0.SGEMIXM release-keys
 # LA.UM.9.12.r1-14200.02-SMxx50.QSSI12.0 blobs from lito
-# Spes blobs version: miui_SPESGlobal_V13.0.2.0.SGCMIXM_6a19483890_12.0
 
 # ACDB
 vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb
@@ -123,9 +122,9 @@ vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
-# Batterysecret - from spes
-vendor/bin/batterysecret
-vendor/etc/init/init.batterysecret.rc
+# Batterysecret - from spes-user-12-SKQ1.211103.001-V13.0.2.0.SGKMIXM-release-keys
+vendor/bin/batterysecret|58c75096366cf981b4a1f1cea1f41a392ac0d07b
+vendor/etc/init/init.batterysecret.rc|93b03fe5139f32fa17a006198a55cdc19570b252
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
