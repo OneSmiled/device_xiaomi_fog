@@ -147,9 +147,6 @@ TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
 TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
 TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 
-# Kernel - Set SELinux to permissive temporarily
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
-
 # Kernel - Prebuilt images
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
@@ -230,9 +227,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2022-06-01
-
-# SELinux
-IGNORE_SELINUX_NEVERALLOWS := true
 
 # Sepolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
