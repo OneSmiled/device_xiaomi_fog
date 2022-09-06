@@ -10,5 +10,8 @@ vendor_restricted_prop(vendor_fingerprint_prop)
 # IMEI
 vendor_internal_prop(vendor_device_prop)
 
+# Thermal
+vendor_internal_prop(vendor_thermal_normal_prop)
+
 # Wi-Fi MAC
 vendor_internal_prop(vendor_wifimac_prop)
