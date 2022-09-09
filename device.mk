@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
+PRODUCT_PACKAGES += \
+    libldacBT_enc \
+    libldacBT_abr
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
