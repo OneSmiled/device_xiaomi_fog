@@ -312,7 +312,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.fog
+    android.hardware.light-service.xiaomi
 
 PRODUCT_PACKAGES += \
     lights.bengal
