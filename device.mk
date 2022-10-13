@@ -27,8 +27,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi \
-    vendor/qcom/opensource/usb/etc
+    hardware/xiaomi
 
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -465,12 +464,14 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
+    init.qcom.usb.sh \
     init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
     init.qcom.rc \
+    init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -520,11 +521,8 @@ PRODUCT_BOOT_JARS += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
-
-PRODUCT_PACKAGES += \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh
+    android.hardware.usb@1.3-service-fog \
+    android.hardware.usb.gadget@1.1-service-fog
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
